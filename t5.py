@@ -1,0 +1,2 @@
+def funct():
+    return "test"
