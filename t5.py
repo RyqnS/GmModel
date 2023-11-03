@@ -1,2 +1,2 @@
-def Fun():
-    return "T"
+def func():
+    
