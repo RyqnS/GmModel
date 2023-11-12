@@ -1,0 +1,37 @@
+{
+    "os": "macOS-13.4-arm64-arm-64bit",
+    "python": "3.10.8",
+    "heartbeatAt": "2023-11-12T21:12:50.977832",
+    "startedAt": "2023-11-12T21:12:50.927847",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/ryansong/Desktop/GmModel/t5.py",
+    "codePathLocal": "t5.py",
+    "codePath": "t5.py",
+    "git": {
+        "remote": "https://github.com/RyqnS/GmModel.git",
+        "commit": "528e536c3facb9fdc4db73e5b4f1a97ef3c38054"
+    },
+    "email": "ryqnsong@gmail.com",
+    "root": "/Users/ryansong/Desktop/GmModel",
+    "host": "ryans-mbp-5.wifi.local.cmu.edu",
+    "username": "ryansong",
+    "executable": "/usr/local/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 11.013320922851562
+        }
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}
