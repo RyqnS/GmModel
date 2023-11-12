@@ -9,7 +9,7 @@ from happytransformer import TTSettings
 from happytransformer import TTTrainArgs
 from happytransformer import HappyTextToText
 
-t5Model = HappyTextToText("T5", "t5-base")
+t5Model = HappyTextToText("T5", "t5-small")
 
 ## EDIT--
 #Downloading Data

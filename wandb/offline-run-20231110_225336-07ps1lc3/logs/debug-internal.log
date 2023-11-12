@@ -1,0 +1,43 @@
+2023-11-10 22:53:36,934 INFO    StreamThr :88398 [internal.py:wandb_internal():86] W&B internal server running at pid: 88398, started at: 2023-11-10 22:53:36.933491
+2023-11-10 22:53:36,935 DEBUG   HandlerThread:88398 [handler.py:handle_request():146] handle_request: status
+2023-11-10 22:53:36,937 INFO    WriterThread:88398 [datastore.py:open_for_write():85] open: /Users/ryansong/Desktop/GmModel/wandb/offline-run-20231110_225336-07ps1lc3/run-07ps1lc3.wandb
+2023-11-10 22:53:36,967 DEBUG   HandlerThread:88398 [handler.py:handle_request():146] handle_request: run_start
+2023-11-10 22:53:36,972 DEBUG   HandlerThread:88398 [system_info.py:__init__():32] System info init
+2023-11-10 22:53:36,972 DEBUG   HandlerThread:88398 [system_info.py:__init__():47] System info init done
+2023-11-10 22:53:36,972 INFO    HandlerThread:88398 [system_monitor.py:start():194] Starting system monitor
+2023-11-10 22:53:36,972 INFO    SystemMonitor:88398 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-10 22:53:36,973 INFO    HandlerThread:88398 [system_monitor.py:probe():214] Collecting system info
+2023-11-10 22:53:36,973 DEBUG   HandlerThread:88398 [system_info.py:probe():196] Probing system
+2023-11-10 22:53:36,973 INFO    SystemMonitor:88398 [interfaces.py:start():190] Started cpu monitoring
+2023-11-10 22:53:36,973 INFO    SystemMonitor:88398 [interfaces.py:start():190] Started disk monitoring
+2023-11-10 22:53:36,974 INFO    SystemMonitor:88398 [interfaces.py:start():190] Started gpuapple monitoring
+2023-11-10 22:53:36,975 INFO    SystemMonitor:88398 [interfaces.py:start():190] Started memory monitoring
+2023-11-10 22:53:36,976 INFO    SystemMonitor:88398 [interfaces.py:start():190] Started network monitoring
+2023-11-10 22:53:36,981 DEBUG   HandlerThread:88398 [system_info.py:_probe_git():181] Probing git
+2023-11-10 22:53:37,001 DEBUG   HandlerThread:88398 [system_info.py:_probe_git():189] Probing git done
+2023-11-10 22:53:37,001 DEBUG   HandlerThread:88398 [system_info.py:probe():244] Probing system done
+2023-11-10 22:53:37,001 DEBUG   HandlerThread:88398 [system_monitor.py:probe():223] {'os': 'macOS-13.4-arm64-arm-64bit', 'python': '3.10.8', 'heartbeatAt': '2023-11-11T03:53:36.973172', 'startedAt': '2023-11-11T03:53:36.928683', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/ryansong/Desktop/GmModel/t5.py', 'codePathLocal': 't5.py', 'codePath': 't5.py', 'git': {'remote': 'https://github.com/RyqnS/GmModel.git', 'commit': '9724b378ffb042088039a7ad4f90f0b8511a134c'}, 'email': 'ryqnsong@gmail.com', 'root': '/Users/ryansong/Desktop/GmModel', 'host': 'ryans-mbp-5.wifi.local.cmu.edu', 'username': 'ryansong', 'executable': '/usr/local/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 8, 'disk': {'/': {'total': 460.4317207336426, 'used': 11.013320922851562}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2023-11-10 22:53:37,001 INFO    HandlerThread:88398 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-10 22:53:37,001 INFO    HandlerThread:88398 [system_monitor.py:probe():227] Publishing system info
+2023-11-10 22:53:37,001 DEBUG   HandlerThread:88398 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-10 22:53:37,001 DEBUG   HandlerThread:88398 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-10 22:53:37,002 INFO    HandlerThread:88398 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-10 22:53:41,954 DEBUG   HandlerThread:88398 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 22:53:41,955 DEBUG   SenderThread:88398 [sender.py:send_request():407] send_request: status_report
+2023-11-10 22:53:46,975 DEBUG   HandlerThread:88398 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 22:53:46,975 DEBUG   SenderThread:88398 [sender.py:send_request():407] send_request: status_report
+2023-11-10 22:53:51,993 DEBUG   HandlerThread:88398 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 22:53:51,994 DEBUG   SenderThread:88398 [sender.py:send_request():407] send_request: status_report
+2023-11-10 22:53:57,015 DEBUG   HandlerThread:88398 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 22:53:57,016 DEBUG   SenderThread:88398 [sender.py:send_request():407] send_request: status_report
+2023-11-10 22:54:02,036 DEBUG   HandlerThread:88398 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 22:54:02,036 DEBUG   SenderThread:88398 [sender.py:send_request():407] send_request: status_report
+2023-11-10 22:54:07,053 DEBUG   HandlerThread:88398 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 22:54:07,053 DEBUG   SenderThread:88398 [sender.py:send_request():407] send_request: status_report
+2023-11-10 22:54:09,045 INFO    memory    :88398 [interfaces.py:monitor():140] Process proc.memory.rssMB has exited.
+2023-11-10 22:54:09,045 DEBUG   SystemMonitor:88398 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-10 22:54:09,045 DEBUG   SystemMonitor:88398 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-10 22:54:09,045 DEBUG   SystemMonitor:88398 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-10 22:54:10,063 WARNING StreamThr :88398 [internal.py:is_dead():414] Internal process exiting, parent pid 88387 disappeared
+2023-11-10 22:54:10,063 ERROR   StreamThr :88398 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-11-10 22:54:10,120 INFO    MainThread:88398 [internal.py:handle_exit():76] Internal process exited
