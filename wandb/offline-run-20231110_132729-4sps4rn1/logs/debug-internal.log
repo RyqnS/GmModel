@@ -1,0 +1,143 @@
+2023-11-10 13:27:29,365 INFO    StreamThr :83487 [internal.py:wandb_internal():86] W&B internal server running at pid: 83487, started at: 2023-11-10 13:27:29.363933
+2023-11-10 13:27:29,366 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status
+2023-11-10 13:27:29,371 INFO    WriterThread:83487 [datastore.py:open_for_write():85] open: /Users/ryansong/Desktop/GmModel/wandb/offline-run-20231110_132729-4sps4rn1/run-4sps4rn1.wandb
+2023-11-10 13:27:29,409 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: run_start
+2023-11-10 13:27:29,413 DEBUG   HandlerThread:83487 [system_info.py:__init__():32] System info init
+2023-11-10 13:27:29,413 DEBUG   HandlerThread:83487 [system_info.py:__init__():47] System info init done
+2023-11-10 13:27:29,413 INFO    HandlerThread:83487 [system_monitor.py:start():194] Starting system monitor
+2023-11-10 13:27:29,413 INFO    SystemMonitor:83487 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-11-10 13:27:29,413 INFO    HandlerThread:83487 [system_monitor.py:probe():214] Collecting system info
+2023-11-10 13:27:29,413 DEBUG   HandlerThread:83487 [system_info.py:probe():196] Probing system
+2023-11-10 13:27:29,413 INFO    SystemMonitor:83487 [interfaces.py:start():190] Started cpu monitoring
+2023-11-10 13:27:29,414 INFO    SystemMonitor:83487 [interfaces.py:start():190] Started disk monitoring
+2023-11-10 13:27:29,414 INFO    SystemMonitor:83487 [interfaces.py:start():190] Started gpuapple monitoring
+2023-11-10 13:27:29,415 INFO    SystemMonitor:83487 [interfaces.py:start():190] Started memory monitoring
+2023-11-10 13:27:29,416 INFO    SystemMonitor:83487 [interfaces.py:start():190] Started network monitoring
+2023-11-10 13:27:29,420 DEBUG   HandlerThread:83487 [system_info.py:_probe_git():181] Probing git
+2023-11-10 13:27:29,441 DEBUG   HandlerThread:83487 [system_info.py:_probe_git():189] Probing git done
+2023-11-10 13:27:29,441 DEBUG   HandlerThread:83487 [system_info.py:probe():244] Probing system done
+2023-11-10 13:27:29,441 DEBUG   HandlerThread:83487 [system_monitor.py:probe():223] {'os': 'macOS-13.4-arm64-arm-64bit', 'python': '3.10.8', 'heartbeatAt': '2023-11-10T18:27:29.413873', 'startedAt': '2023-11-10T18:27:29.354971', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/ryansong/Desktop/GmModel/t5.py', 'codePathLocal': 't5.py', 'codePath': 't5.py', 'git': {'remote': 'https://github.com/RyqnS/GmModel.git', 'commit': '9724b378ffb042088039a7ad4f90f0b8511a134c'}, 'email': 'ryqnsong@gmail.com', 'root': '/Users/ryansong/Desktop/GmModel', 'host': 'ryans-mbp-5.wifi.local.cmu.edu', 'username': 'ryansong', 'executable': '/usr/local/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 8, 'disk': {'/': {'total': 460.4317207336426, 'used': 11.013320922851562}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2023-11-10 13:27:29,441 INFO    HandlerThread:83487 [system_monitor.py:probe():224] Finished collecting system info
+2023-11-10 13:27:29,441 INFO    HandlerThread:83487 [system_monitor.py:probe():227] Publishing system info
+2023-11-10 13:27:29,441 DEBUG   HandlerThread:83487 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-11-10 13:27:29,441 DEBUG   HandlerThread:83487 [system_info.py:_save_pip():68] Saving pip packages done
+2023-11-10 13:27:29,441 INFO    HandlerThread:83487 [system_monitor.py:probe():229] Finished publishing system info
+2023-11-10 13:27:34,385 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:27:34,386 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:27:39,403 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:27:39,405 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:27:44,424 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:27:44,426 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:27:49,448 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:27:49,452 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:27:54,474 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:27:54,478 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:27:59,500 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:27:59,502 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:28:04,524 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:28:04,524 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:28:09,546 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:28:09,547 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:28:14,590 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:28:14,591 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:28:19,606 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:28:19,607 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:28:24,628 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:28:24,634 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:28:29,422 DEBUG   SystemMonitor:83487 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-11-10 13:28:29,657 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:28:29,658 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:28:34,677 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:28:34,678 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:28:39,695 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:28:39,696 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:28:44,721 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:28:44,722 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:28:49,742 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:28:49,743 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:28:54,762 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:28:54,762 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:28:59,781 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:28:59,782 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:29:04,800 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:29:04,802 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:29:09,822 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:29:09,823 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:29:14,841 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:29:14,843 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:29:19,874 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:29:19,876 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:29:24,895 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:29:24,897 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:29:29,913 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:29:29,913 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:29:34,933 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:29:34,935 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:29:39,957 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:29:39,957 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:29:44,978 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:29:44,980 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:29:49,996 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:29:49,998 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:29:55,014 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:29:55,016 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:30:00,037 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:30:00,038 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:30:05,057 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:30:05,059 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:30:10,091 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:30:10,096 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:30:15,115 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:30:15,117 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:30:20,140 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:30:20,141 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:30:25,164 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:30:25,166 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:30:30,183 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:30:30,184 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:30:35,204 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:30:35,205 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:30:40,229 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:30:40,230 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:30:45,250 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:30:45,250 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:30:50,271 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:30:50,271 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:30:55,295 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:30:55,296 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:31:00,319 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:31:00,320 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:31:05,351 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:31:05,354 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:31:10,369 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:31:10,369 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:31:15,388 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:31:15,390 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:31:20,408 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:31:20,409 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:31:25,430 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:31:25,437 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:31:30,447 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:31:30,448 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:31:35,472 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:31:35,472 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:31:40,502 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:31:40,503 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:31:45,528 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:31:45,528 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:31:50,545 DEBUG   HandlerThread:83487 [handler.py:handle_request():146] handle_request: status_report
+2023-11-10 13:31:50,546 DEBUG   SenderThread:83487 [sender.py:send_request():407] send_request: status_report
+2023-11-10 13:31:53,992 INFO    cpu       :83487 [interfaces.py:monitor():140] Process cpu has exited.
+2023-11-10 13:31:53,992 DEBUG   SystemMonitor:83487 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-11-10 13:31:53,992 DEBUG   SystemMonitor:83487 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-11-10 13:31:55,433 WARNING StreamThr :83487 [internal.py:is_dead():414] Internal process exiting, parent pid 83465 disappeared
+2023-11-10 13:31:55,433 ERROR   StreamThr :83487 [internal.py:wandb_internal():152] Internal process shutdown.
+2023-11-10 13:31:55,569 INFO    SenderThread:83487 [sender.py:finish():1534] shutting down sender
+2023-11-10 13:31:56,003 INFO    HandlerThread:83487 [handler.py:finish():866] shutting down handler
+2023-11-10 13:31:56,003 INFO    HandlerThread:83487 [system_monitor.py:finish():203] Stopping system monitor
+2023-11-10 13:31:56,003 INFO    HandlerThread:83487 [interfaces.py:finish():202] Joined cpu monitor
+2023-11-10 13:31:56,003 INFO    HandlerThread:83487 [interfaces.py:finish():202] Joined disk monitor
+2023-11-10 13:31:56,003 INFO    HandlerThread:83487 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-11-10 13:31:56,003 INFO    HandlerThread:83487 [interfaces.py:finish():202] Joined memory monitor
+2023-11-10 13:31:56,003 INFO    HandlerThread:83487 [interfaces.py:finish():202] Joined network monitor
+2023-11-10 13:31:56,003 INFO    WriterThread:83487 [datastore.py:close():294] close: /Users/ryansong/Desktop/GmModel/wandb/offline-run-20231110_132729-4sps4rn1/run-4sps4rn1.wandb
