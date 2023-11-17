@@ -7,6 +7,7 @@ from transformers import AutoModelForSeq2SeqLM, AutoConfig, DataCollatorForSeq2S
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
+
 BATCH_SIZE = 16
 BLEU = "bleu"
 ENGLISH = "en"
@@ -51,8 +52,8 @@ def prep_data_for_model_fine_tuning(source_lang: list, target_lang: list) -> lis
     return data_dict
 
 def generate_model_ready_dataset(dataset: list, source: str, target: str,
-                                model_checkpoint: str,
-                                tokenizer: AutoTokenizer):
+                                 model_checkpoint: str,
+                                 tokenizer: AutoTokenizer):
     """Makes the data training ready for the model"""
 
     preped_data = []
@@ -62,14 +63,14 @@ def generate_model_ready_dataset(dataset: list, source: str, target: str,
         targets = row[target]
 
         model_inputs = tokenizer(inputs, max_length=MAX_INPUT_LENGTH,
-                                truncation=True, padding=True)
+                                 truncation=True, padding=True)
 
         model_inputs[TRANSLATION] = row
 
         # setup the tokenizer for targets
         with tokenizer.as_target_tokenizer():
             labels = tokenizer(targets, max_length=MAX_INPUT_LENGTH,
-                                truncation=True, padding=True)
+                                 truncation=True, padding=True)
             model_inputs[LABELS] = labels[INPUT_IDS]
 
         preped_data.append(model_inputs)
@@ -107,8 +108,8 @@ def compute_metrics(eval_preds: tuple) -> dict:
     return result
 
 #Loading Model and Data
-tokenizer = AutoTokenizer.from_pretrained('t5-base')
-model = AutoModelForSeq2SeqLM.from_pretrained('t5-base')
+tokenizer = AutoTokenizer.from_pretrained("./Model/t5-GEC/checkpoint-1000")
+model = AutoModelForSeq2SeqLM.from_pretrained('./Model/t5-GEC/checkpoint-1000')
 data_collator = DataCollatorForSeq2Seq(tokenizer, model = model)
 
 translation_data = pd.read_csv("./Data/trainData.csv")
@@ -122,38 +123,38 @@ x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.10,
                                                     random_state=100)
 
 x_train, x_val, y_train, y_val = train_test_split(x_train, y_train,
-                                                test_size=0.20,
-                                                shuffle=True,
-                                                random_state=100)
+                                                  test_size=0.20,
+                                                  shuffle=True,
+                                                  random_state=100)
 print("FINAL X-TRAIN SHAPE: ", x_train.shape)
 print("FINAL Y-TRAIN SHAPE: ", y_train.shape)
 print("X-VAL SHAPE: ", x_val.shape)
 print("Y-VAL SHAPE: ", y_val.shape)
-    
+     
 training_data = prep_data_for_model_fine_tuning(x_train.values, y_train.values)
 
 validation_data = prep_data_for_model_fine_tuning(x_val.values, y_val.values)
 
 test_data = prep_data_for_model_fine_tuning(x_test.values, y_test.values)
-    
+     
 
 train_data = generate_model_ready_dataset(dataset=training_data[TRANSLATION],
-                                        tokenizer=tokenizer,
-                                        source="Input",
-                                        target="Target",
-                                        model_checkpoint=MODEL_CHECKPOINT)
+                                          tokenizer=tokenizer,
+                                          source="Input",
+                                          target="Target",
+                                          model_checkpoint=MODEL_CHECKPOINT)
 
 validation_data = generate_model_ready_dataset(dataset=validation_data[TRANSLATION],
-                                            tokenizer=tokenizer,
-                                            source="Input",
-                                            target="Target",
-                                            model_checkpoint=MODEL_CHECKPOINT)
+                                               tokenizer=tokenizer,
+                                               source="Input",
+                                               target="Target",
+                                               model_checkpoint=MODEL_CHECKPOINT)
 
 test_data = generate_model_ready_dataset(dataset=test_data[TRANSLATION],
-                                            tokenizer=tokenizer,
-                                            source="Input",
-                                            target="Target",
-                                            model_checkpoint=MODEL_CHECKPOINT)
+                                               tokenizer=tokenizer,
+                                               source="Input",
+                                               target="Target",
+                                               model_checkpoint=MODEL_CHECKPOINT)
 
 train_df = pd.DataFrame.from_records(train_data)
 validation_df = pd.DataFrame.from_records(validation_data)
@@ -162,10 +163,14 @@ train_dataset = Dataset.from_pandas(train_df)
 validation_dataset = Dataset.from_pandas(validation_df)
 test_dataset = Dataset.from_pandas(test_df)
 
+
+
 # training_data = prep_data_for_model_fine_tuning(x_train.values, y_train.values)
 # validation_data = prep_data_for_model_fine_tuning(x_val.values, y_val.values)
 
+
 #Train 
+
 args = Seq2SeqTrainingArguments(
     "./Model/t5-GEC",
     evaluation_strategy=EPOCH,
@@ -179,6 +184,7 @@ args = Seq2SeqTrainingArguments(
 )
 
 ##Training
+
 trainer = Seq2SeqTrainer(
     model = model,
     args=args,
@@ -189,6 +195,4 @@ trainer = Seq2SeqTrainer(
 )
 
 trainer.train()
-
-
-
+trainer.save_model("./FineTunedTransformer")
