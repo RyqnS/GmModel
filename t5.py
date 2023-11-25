@@ -9,25 +9,24 @@ from sklearn.model_selection import train_test_split
 
 class T5Item:
     def __init__(self):       
-        BATCH_SIZE = 16
-        BLEU = "bleu"
-        ENGLISH = "en"
-        ENGLISH_TEXT = "english_text"
-        EPOCH = "epoch"
-        INPUT_IDS = "input_ids"
-        FILENAME = "TranslationDataset.csv"
-        GEN_LEN = "gen_len"
-        MAX_INPUT_LENGTH = 128
+        BATCH_SIZE = 16 #int
+        BLEU = "bleu" #used for evaluation later on
+        ENGLISH = "en" #useless
+        ENGLISH_TEXT = "english_text" #useless
+        EPOCH = "epoch" #train type
+        INPUT_IDS = "input_ids" #part of t5 model params
+        GEN_LEN = "gen_len" #used for evaluation later on
+        MAX_INPUT_LENGTH = 128 
         MAX_TARGET_LENGTH = 128
-        MODEL_CHECKPOINT = "./Data/t5-GEC"
-        MODEL_NAME = MODEL_CHECKPOINT.split("/")[-1]
-        LABELS = "labels"
-        PREFIX = ""
+        MODEL_CHECKPOINT = "./Data/t5-GEC" #checkpoint save path
+        MODEL_NAME = MODEL_CHECKPOINT.split("/")[-1] #t5-GEC
+        LABELS = "labels" 
+        PREFIX = "" 
         SCORE = "score"
-        SOURCE_LANG = "Input"
-        TARGET_LANG = "Target"
-        TRANSLATION = "translation"
-        UNNAMED_COL = "Unnamed: 0"
+        SOURCE_LANG = "Input" #csv column 1
+        TARGET_LANG = "Target" #csv column 2
+        TRANSLATION = "translation" #model type
+        UNNAMED_COL = "Unnamed: 0" #csv extra column
 
     def postprocess_text(preds: list, labels: list) -> tuple:
         """Performs post processing on the prediction text and labels"""
